@@ -5,11 +5,23 @@
 
 |  
 
-``cleanlab`` is a machine learning python package for **learning with noisy labels** and **finding label errors in datasets**. ``cleanlab`` CLEANs LABels. It is powered by the theory of **confident learning**, published in this `paper <https://arxiv.org/abs/1911.00068>`__ |  `blog <https://l7.curtisnorthcutt.com/confident-learning>`__. 
+``cleanlab`` is python package for **machine learning with noisy labels**. ``cleanlab`` ``clean``\s ``lab``\els and supports **finding, quantifying, and learning** with label errors in datasets.
+
+``cleanlab`` is powered by **confident learning**, published in this |cl_paper| | |cl_blog|. 
+
+.. |cl_paper| raw:: html
+
+   <a href="https://arxiv.org/abs/1911.00068" target="_blank">paper</a>
+
+.. |cl_blog| raw:: html
+
+   <a href="https://l7.curtisnorthcutt.com/confident-learning" target="_blank">blog</a>
 
 ****
 
-* **News! (Dec 2020)**  `cleanlab` supports NeurIPS research. `(Northcutt et al., NeurIPS, 2020) <http://securedata.lol/camera_ready/28.pdf>`__, and finds label errors across 10 common benchark datasets (ImageNet, CIFAR-10, CIFAR-100, Caltech-256, Quickdraw, MNIST, Amazon Reviews, IMDB, 20 News Groups, AudioSet). Along with the paper, the authors launched `labelerrors.com <https://labelerrors.com>`__ where you can view the label errors in these datasets.
+* **News! (Apr 2021)**  `cleanlab` published in the  `confident learning paper (Northcutt, Jiang, & Chuang, 2021) <https://jair.org/index.php/jair/article/view/12125>`__ in the Journal of AI Research.
+* **News! (Mar 2021)**  `cleanlab` supports ICLR workshop paper `(Northcutt, Athalye, & Mueller, 2021) <https://arxiv.org/abs/1911.00068>`__, by finding label errors across 10 common benchark datasets (ImageNet, CIFAR-10, CIFAR-100, Caltech-256, Quickdraw, MNIST, Amazon Reviews, IMDB, 20 News Groups, AudioSet). Along with the paper, the authors launched `labelerrors.com <https://labelerrors.com>`__ where you can view the label errors in these datasets.
+* **News! (Dec 2020)**  `cleanlab` supports NeurIPS workshop paper `(Northcutt, Athalye, & Lin, 2020) <http://securedata.lol/camera_ready/28.pdf>`__.
 * **News! (Dec 2020)**  `cleanlab` supports `PU learning <https://github.com/cgnorthcutt/cleanlab#pu-learning-with-cleanlab>`__.
 * **News! (Jan 2020)** `cleanlab` achieves state-of-the-art on CIFAR-10 for learning with noisy labels. Code to reproduce is here:  `examples/cifar10 <https://github.com/cgnorthcutt/cleanlab/tree/master/examples/cifar10>`__. This is a great place for newcomers to see how to use cleanlab on real datasets. Data needed is available in the `confidentlearning-reproduce <https://github.com/cgnorthcutt/confidentlearning-reproduce>`__ repo, ``cleanlab`` v0.1.0 reproduces results in `the CL paper <https://arxiv.org/abs/1911.00068>`__.
 * **News! (Feb 2020)**  `cleanlab` now natively supports Mac, Linux, and Windows.
@@ -121,22 +133,22 @@ To install the codebase (enabling you to make modifications):
 Citations and Related Publications
 ==================================
 
-If you use this package in your work, please cite the `confident learning paper <https://arxiv.org/abs/1911.00068>`__:
+If you use this package, please cite the `confident learning paper <https://arxiv.org/abs/1911.00068>`__ (published April 2021, in the `Journal of AI Research <https://jair.org/index.php/jair/article/view/12125>`__):
 
 ::
 
-  @misc{northcutt2019confidentlearning,
+  @article{northcutt2021confidentlearning,
      title={Confident Learning: Estimating Uncertainty in Dataset Labels},
      author={Curtis G. Northcutt and Lu Jiang and Isaac L. Chuang},
-     year={2019},
-     eprint={1911.00068},
-     archivePrefix={arXiv},
-     primaryClass={stat.ML}
-  }
+     journal={Journal of Artificial Intelligence Research (JAIR)},
+     volume={70},
+     pages={1373--1411},
+     year={2021}
+   }
 
 
 
-If used for binary classification, cleanlab also implements `this paper <https://arxiv.org/abs/1705.01936>`__:
+If you use this package for binary classification, please also cite the `rankpruning paper <https://arxiv.org/abs/1705.01936>`__ (published August 2017, in `Uncertainty in AI <http://auai.org/uai2017/proceedings/papers/35.pdf>`__):
 
 ::
 
